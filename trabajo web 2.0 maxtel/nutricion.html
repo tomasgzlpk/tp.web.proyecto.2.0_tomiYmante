@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- fuentes -->
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- -------- -->
+    <title>Nutricion</title>
+</head>
+
+<body>
+    <header>
+        <nav class="contenedor_menu_nav">
+            <div class="logo_nav">
+                <a href="index.html">
+                    <img src="imagenes/logo.jfif" alt="">
+                </a>
+            </div>
+            <div id="btn-abrir-menu" class="boton_menu mobile">
+                <span class="material-symbols-outlined icono-blanco">menu</span>
+            </div>
+            <div id="menu-mobile" class="menu_nav mobile oculto">
+                <span id="btn-cerrar-menu" class="material-symbols-outlined icono-blanco btn_cerrar">close</span>
+                <ul>
+                    <li><a href="trensuperior.html"> tren superior</a></li>
+                    <li><a href="#"> tren inferior</a></li>
+                    <li><a href="nutricion.html">nutricion</a></li>
+                    <li><a href="form.html">hazte parte</a></li>
+                </ul>
+            </div>
+            <div class="menu_nav">
+                <ul>
+                    <li><a href="trensuperior.html"> tren superior</a></li>
+                    <li><a href="#"> tren inferior</a></li>
+                    <li><a href="nutricion.html">nutricion</a></li>
+                    <li><a href="form.html">hazte parte</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="portada">
+            <img src="imagenes/healthy-food-slateboard-with-copy-space (1).jpg" alt="">
+            <div class="portada_texto centrado">
+                <h1>nutricion</h1>
+            </div>
+
+        </div>
+    </header>
+    <section class="section">
+        <article class="requerimiento">
+
+            <h2>requerimiento energetico</h2>
+            <div class="energetico">
+                <p>El requerimiento energético se refiere a la cantidad de energía que necesita una persona
+                    para mantener
+                    sus funciones corporales
+                    y llevar a cabo sus actividades diarias. La energía se obtiene a través de los alimentos que
+                    consumimos
+                    y se mide en calorías</p>
+            </div>
+
+            <h3>aqui un formulario que podes determinar tu requerimiento energetico</h3>
+
+        </article>
+        <section class="formulario">
+
+            <form action="" class="contenido_formulario" id="form-req-energetico">
+                <label for="">altura en cm: <input type="text" name="altura" placeholder="175"></label>
+                <label for="">peso en kilos: <input type="text" name="peso" placeholder="75"></label>
+                <label for="">edad: <input type="text" name="edad" placeholder="30"></label>
+                <div class="sexo">
+                    <label for=""><input type="radio" name="sexo" value="m"> hombre </label>
+                    <label for=""><input type="radio" name="sexo" value="f"> mujer </label>
+                </div>
+                <div class="nivel_actividad">
+                    <label for="">nivel de actividad fisica: <select name="actividad" id=""></label>
+                    <option value="1.2">sedentario</option>
+                    <option value="1.375">levemente activo</option>
+                    <option value="1.55" selected>moderadamente activo</option>
+                    <option value="1.725">muy activo</option>
+                    <option value="1.9">extremadamente activo</option>
+                    </select>
+                </div>
+                <button type="submit" >calcular</button>
+            </form>
+
+            <div class="resultado">
+                <h4>aqui tus resultados</h4>
+            </div>
+
+            <table class="tabla">
+                <tr>
+                    <td>calorias diarias necesarias:</td>
+                    <td id="mantenimiento"></td>
+                </tr>
+                <tr>
+                    <td>calorias diarias para perder peso:</td>
+                    <td id="deficit"></td>
+                </tr>
+                <tr>
+                    <td>calorias diarias para ganar peso:</td>
+                    <td id="superavit"></td>
+                </tr>
+            </table>
+
+
+
+
+        </section>
+        <article class="explicacio_requerimiento">
+            <div class="negrita">
+                <p>
+                    Las tres importantes ramas relacionadas con el consumo calórico son el mantenimiento,
+                    el déficit y el superávit calórico. Estos conceptos están estrechamente ligados a la actividad
+                    física
+                    y juegan un papel fundamental en el logro de diferentes objetivos relacionados con la composición
+                    corporal y el rendimiento físico.
+                </p>
+            </div>
+            <p>
+                <span>El mantenimiento calórico:</span> se refiere a consumir una cantidad de calorías que equilibra las
+                necesidades
+                energéticas del cuerpo, lo que permite mantener el peso corporal actual. Para las personas que
+                buscan
+                mantener su peso, el objetivo es consumir aproximadamente la misma cantidad de calorías que se
+                queman
+                a través de la actividad diaria y el metabolismo basal. Esto proporciona la energía necesaria para
+                mantener las funciones corporales en equilibrio y realizar las actividades cotidianas.
+            </p>
+            <p>
+                <span>El déficit calórico:</span> implica consumir menos calorías de las que el cuerpo necesita para
+                mantener su
+                peso
+                actual. Este enfoque se utiliza comúnmente para promover la pérdida de peso. Al crear un déficit
+                calórico, el cuerpo recurre a sus reservas de energía almacenadas, como la grasa corporal,
+                para satisfacer sus necesidades energéticas. Esta reducción de calorías se combina a menudo con el
+                aumento de la actividad física para maximizar la quema de calorías y fomentar la pérdida de grasa.
+            </p>
+            <p>
+                <span>el superávit calórico:</span> se refiere a consumir más calorías de las que el cuerpo
+                necesita
+                para mantener su peso actual. Este enfoque se utiliza generalmente para promover el aumento de peso,
+                especialmente en forma de masa muscular. El superávit calórico proporciona al cuerpo el exceso de
+                energía necesario para apoyar el crecimiento y la reparación de tejidos, así como para el aumento de
+                la masa muscular. Combinado con un programa de entrenamiento de fuerza, este enfoque puede ayudar a
+                mejorar el rendimiento deportivo y la composición corporal.
+            </p>
+            <div class="negrita">
+                <p>
+                    Es importante destacar que tanto el déficit como el superávit calórico deben ser abordados de manera
+                    equilibrada y saludable. Tanto la calidad de los alimentos consumidos como el tipo de actividad
+                    física
+                    desempeñan un papel crucial en los resultados obtenidos. Es recomendable buscar el asesoramiento de
+                    un
+                    profesional de la nutrición o médico para establecer un plan adecuado y personalizado según los
+                    objetivos individuales, la salud general y el nivel de actividad física. Un enfoque adecuado y
+                    sostenible garantizará resultados óptimos y una buena salud a largo plazo.
+                </p>
+            </div>
+            
+        </article>
+        <div class="tabala_alimentos">
+            <h3>lista de alimentos </h3>
+            <table>
+                <tr>
+                    <thead>
+                        <td>Alimento</td>
+                        <td>Porcion</td>
+                        <td>Calorias</td>
+                        <td>Proteinas</td>
+                        <td>Carbohidratos</td>
+                        <td>Grasas</td>
+                    </thead>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>100g</td>
+                    <td>130</td>
+                    <td>2.7g</td>
+                    <td>28.2g</td>
+                    <td>0.3g</td>
+                </tr>
+                <tr>
+                    <td>Fideos</td>
+                    <td>100g</td>
+                    <td>352</td>
+                    <td>12.5g</td>
+                    <td>73.1g</td>
+                    <td>1.5g</td>
+                </tr>
+                <tr>
+                    <td>Papa</td>
+                    <td>100g</td>
+                    <td>77</td>
+                    <td>2g</td>
+                    <td>17g</td>
+                    <td>0.1g</td>
+                </tr>
+                <tr>
+                    <td>Zapallo</td>
+                    <td>100g</td>
+                    <td>26</td>
+                    <td>1g</td>
+                    <td>6g</td>
+                    <td>0.1g</td>
+                </tr>
+                <tr>
+                    <td>Zanahoria</td>
+                    <td>100g</td>
+                    <td>41</td>
+                    <td>0.9g</td>
+                    <td>9.6g</td>
+                    <td>0.2g</td>
+                </tr>
+                <tr>
+                    <td>Queso</td>
+                    <td>100g</td>
+                    <td>402</td>
+                    <td>25g</td>
+                    <td>1.3g</td>
+                    <td>33g</td>
+                </tr>
+                <tr>
+                    <td>Huevo</td>
+                    <td>100g</td>
+                    <td>143</td>
+                    <td>13g</td>
+                    <td>1.1g</td>
+                    <td>9.5g</td>
+                </tr>
+                <tr>
+                    <td>Pollo</td>
+                    <td>100g</td>
+                    <td>165</td>
+                    <td>31g</td>
+                    <td>0g</td>
+                    <td>3.6g</td>
+                </tr>
+                <tr>
+                    <td>Carne</td>
+                    <td>100g</td>
+                    <td>250</td>
+                    <td>26g</td>
+                    <td>0g</td>
+                    <td>17g</td>
+                </tr>
+                <tr>
+                    <td>Pescado</td>
+                    <td>100g</td>
+                    <td>206</td>
+                    <td>22g</td>
+                    <td>0g</td>
+                    <td>13g</td>
+                </tr>
+                <tr>
+                    <td>Avena</td>
+                    <td>100g</td>
+                    <td>389</td>
+                    <td>16.9g</td>
+                    <td>63.3g</td>
+                    <td>6.9g</td>
+                </tr>
+                <tr>
+                    <td>Platano</td>
+                    <td>100g</td>
+                    <td>96</td>
+                    <td>1.1g</td>
+                    <td>22g</td>
+                    <td>0.2g</td>
+                </tr>
+                <tr>
+                    <td>Almendras</td>
+                    <td>100g</td>
+                    <td>579</td>
+                    <td>21.2g</td>
+                    <td>21.7g</td>
+                    <td>49.9g</td>
+                </tr>
+                <tr>
+                    <td>Aceite de oliva</td>
+                    <td>100g</td>
+                    <td>884</td>
+                    <td>0g</td>
+                    <td>0g</td>
+                    <td>100g</td>
+                </tr>
+            </table>
+        </div>
+        <div class="explicacio_requerimiento">
+            <h3>
+                esta tabla nos puede brindar informacion como
+            </h3>
+            <p><span> Conocimiento de los nutrientes:</span> Permite conocer los nutrientes presentes en un alimento, como proteínas,
+                carbohidratos, grasas, vitaminas y minerales. Esto es esencial para comprender cómo se ajusta a las
+                necesidades dietéticas y objetivos de salud.
+            </p>
+            <p>
+                <span> Control de las porciones:</span> Proporciona información sobre las porciones recomendadas y las cantidades
+                de nutrientes por porción. Esto ayuda a controlar la cantidad de calorías y otros nutrientes que se
+                consumen, evitando porciones excesivas.
+            </p>
+            <p>
+                <span> Comparación de alimentos:</span> Permite comparar diferentes alimentos y tomar decisiones más saludables al
+                elegir opciones con menor contenido de grasas saturadas, azúcares añadidos o sodio, por ejemplo.
+            </p>
+            <p>
+                <span> Diseño de dietas equilibradas:</span> Ayuda a diseñar una dieta equilibrada y adecuada según las necesidades
+                individuales, incluyendo la cantidad de calorías, macronutrientes y micronutrientes requeridos.
+            </p>
+        </div>
+
+
+
+
+    </section>
+
+    <footer class="footer footer--form">
+        <div class="footer__contenedor--icon">
+            <a href="index.html">
+                <img src="imagenes/logo.jfif">
+            </a>
+        </div>
+        <div class="footer__contenedor__p--descripcion">
+            <p>
+                En fit healthy, descubre la variedad de ejercios, información nuticional y motivación para lograr tu mejor estado físico.
+            </p>
+        </div>
+        <div>
+            <div class="footer__contenedor--subtitulo">
+                <h5>
+                    Hazte parte!
+                </h5>
+                <h6>
+                    Compartamos esta pasión y crezcamos juntos
+                </h6>
+            </div>
+
+            <ul class="footer__ul--social">
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

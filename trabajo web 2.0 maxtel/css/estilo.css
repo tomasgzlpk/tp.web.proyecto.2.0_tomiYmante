@@ -1,0 +1,632 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* como se esta utilizando */
+
+span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* NAVEGADOR  /     BARRA DE NAVEGACION / HOME */
+
+.contenedor_menu_nav {
+    background-color: #002629;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    object-fit: cover
+}
+.logo_nav img {
+    margin: 10px;
+    width: 180px;
+    height: 40px;
+    object-fit: cover
+}
+
+/* Navegador */
+
+.icono-blanco {
+    color: white;
+    font-size: 2rem;
+    padding: 4px;
+    margin-right: 14px;
+}
+.icono-blanco:hover {
+    transition: all .2s;
+    cursor: pointer;
+}
+.btn_cerrar {
+    margin: 15px;
+    background-color: #002629;
+}
+.menu_nav {
+    display: none;
+}
+.menu_nav.mobile {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0rem;
+    text-align: end;
+    background-color: rgba(8, 79, 84, 0.5);
+    height: 100vh;
+    width: 50vw;
+    z-index: 2;
+}
+
+/* oculto (oculta el navegador del mobile)*/
+
+.oculto {
+    display: none !important;
+}
+.menu_nav.mobile ul {
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+.menu_nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 30px;
+    align-items: center;
+}
+.menu_nav li {
+    margin: 30px;
+}
+.menu_nav li:hover {
+    background: aliceblue;
+}
+.menu_nav li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Ubuntu, sans-serif;
+}
+
+/* Imagen portada / con titulo */
+
+.portada_texto.centrado {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portada {
+    position: relative;
+    width: 100%;
+    color: white;
+}
+.portada img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.portada_texto {
+    position: absolute;
+    bottom: 20%;
+    left: 17%;
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+}
+
+.portada_texto p {
+    margin: 0;
+    margin-top: -10px;
+    font-size: 40px;
+}
+.portada_texto h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+/* CONTENIDO DEL HOME (los 5 fundamentales )*/
+
+
+.titulo_cont_home{
+    background-color: black;
+    margin-top: 40px;
+    
+}
+.titulo_cont_home h2{
+    margin: 20px 30px;
+    padding-top: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+.titulo_cont_home p{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    margin: 20px 30px;
+    padding: 15px;
+    text-align: center;
+}
+/*.edit_ejercicios_home{
+    width: 10%;
+}*/
+
+.cont-home span{
+    color: #009E8D;
+}
+
+.cont-home h3{
+    margin: 15px 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #009E8D;
+}
+.img_home{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.img_home img{
+    /* margin: 15px; */
+    /* max-width: 100%; */ /* Asegura que la imagen no se salga de su contenedor */
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 200px;
+}
+
+
+.ejercicios_home{
+
+background-color: black;
+
+padding: 20px;
+
+margin: 50px -0;
+}
+.ejercicios_home p{
+    color: white;
+    margin: 20px 20px;
+    font-size: 10px;
+}
+
+/*REQUERIMIENTO ENERGETICO*/
+
+/*descripcion de contenido*/
+
+.section, .cont-home { /*se aplica al home tambien */
+    padding: 10px 40px;
+}
+.section h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #009E8D;
+    font-size: 16px;
+    margin: 30px 0;
+
+}
+.requerimiento {
+    display: block;
+    text-align: start;
+    margin: 0px;
+   
+
+}
+.energetico {
+    color: white;
+    background-color: black;
+    margin: 0 -40px;
+}
+.requerimiento h2 {/* se utiliza para los h2 */
+    margin: 30px 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #009E8D;
+}
+.requerimiento p {
+    padding: 30px 50px;  
+}
+
+/*NEGRITA*/
+
+.negrita{
+    font-weight: bold;
+}
+
+/*formulario*/
+
+.contenido_formulario {
+    background-color: black;
+    padding: 30px 50px;
+    margin: 0 -40px;
+}
+.sexo {
+    display: flex;
+
+}
+.nivel_actividad {
+    font-size: 12px;
+}
+.contenido_formulario label {
+    color: white;
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    text-transform: uppercase;
+    justify-content: space-between;
+    
+}
+.sexo label{
+    
+    justify-content: flex-start;
+    gap: 10px;
+}
+.contenido_formulario input {
+    text-align: end;
+    font-size: 10px;
+}
+.contenido_formulario option {
+    font-family: Arial, sans-serif;
+}
+.resultado h4{
+    text-align: center;
+    text-transform: uppercase;
+    color: #009E8D;
+}
+
+/*tabla DINAMICA*/
+
+.tabla {
+    background-color: black;
+    padding: 30px 50px;
+    margin: 0 -40px;
+   
+}
+.tabla  tr td {
+    margin: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 1100px;
+    
+}
+
+/*Explicacion de los puntos ( del contenido )*/
+
+.explicacio_requerimiento {
+    margin: 40px 0;
+}
+.explicacio_requerimiento p {
+    margin: 40px 0;
+}
+
+/* tabla de alimentos  */
+
+.tabala_alimentos tr td {
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 8px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 1100px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #002629;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    height: 160px;
+}
+
+.footer--form{
+    position: relative;
+    bottom:0px;
+}
+
+.footer__contenedor--icon{
+    height: 40%;
+    width: 50%;
+    margin: 35px 0px 0px 50px;
+}
+
+.footer__contenedor__p--descripcion{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 30%;
+    margin: 0 0 0 25px ;
+    text-align: center;
+}
+
+.footer__contenedor__p--descripcion p{
+    margin-bottom: 0;
+}
+
+.footer img{
+    width: 135px;
+    height: 40px;
+    object-fit: cover
+}
+
+.footer__contenedor--subtitulo{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    margin: 35px 25px 0 0;
+}
+
+.footer__contenedor--subtitulo h5{
+    margin: 0 0 5px 0 ;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.footer__contenedor--subtitulo h6{
+    margin: 0 0 5px 0 ;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.footer__ul--social{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    list-style: none;
+    margin: 15px 25px 20px 0;
+}
+
+.footer__ul--social li{
+    text-align: center;
+    display: inline-block;
+    padding: 6px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 620px) {
+    .portada_texto p {
+        font-size: 50px;
+    }
+    .portada_texto h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (min-width: 745px) {
+
+    /* MENU DE NAVEGACION */
+
+    .mobile {
+        display: none;
+    }
+    .menu_nav {
+        display: block;
+    }
+    .menu_nav.mobile{
+        display: none;
+    }
+    .portada img {
+        height: 600px;
+    }
+    .portada_texto p {
+        font-size: 70px;
+    }
+    .portada_texto h1 {
+        font-size: 80px;
+    }
+    
+    .ejercicios_home{
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .titulo_cont_home h2{
+        font-size: 20px;
+    }
+    .cont-home h3{
+        font-size: 30px;
+    }
+    .ejercicios_home p{
+        font-size: 15px;
+    }
+   .titulo_cont_home p{
+        font-size: 15px;
+    }
+    .img_home img{
+        width: 350px;
+    }
+    .edit_ejercicios_home{
+        width: 50%;
+    }
+
+
+    
+}
+@media (min-width:1200px) {
+
+
+    /* MENU DE NAVEGACION */
+    
+    .section{
+        padding: 30px 180px;
+    }
+    .tabala_alimentos tr td {
+        font-size: 15px;
+    }
+    .nivel_actividad,
+    .contenido_formulario {
+        font-size: 20px;
+    }
+    
+    .contenido_formulario input{
+        width: 50%;
+    }
+    .sexo input{
+        width: 15px;
+    }
+    .portada_texto p {
+        font-size: 80px;
+    }
+    .portada_texto h1 {
+        font-size: 90px;
+    }
+    .portada_texto {
+        left: 100px;
+    }
+    
+}
+
+@media (min-width:1700px) {
+    .ejercicios_home p{
+        font-size: 25px;
+    }
+    .titulo_cont_home h2{
+        font-size: 30px;
+    }
+   
+    .titulo_cont_home p{
+        font-size: 25px;
+    }
+    .img_home img{
+        width: 400px;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MENU DE NAVEGACION*/
+/*
+.enedor_menu_nav {
+    position: fixed;
+    background: white;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 100vh; 
+}
+}
+.logo{
+    
+}
+.logo img {
+
+}
+/* Navegador */
+/*
+.menu_nav{
+    position: fixed;
+    background: white;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 100vh; 
+    padding: 40px;
+    z-index: 2;
+}
+.menu_nav ul{
+    flex-direction: column;
+    margin-top: 40px;
+}
+.menu_nav li{
+    margin-top: 30px;
+    margin-left: 0px;
+}
+.menu_nav li a{
+    color: grey;
+}
+
+/* Imagen portada / con titulo */
+
+
+/*@media(max-width:950px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    header {
+        width: 100%;
+        height: 80px;
+        margin-top: 40px;
+        position: fixed;
+        z-index: 1;
+        background-color: aqua;
+    }
+    .contenedor_menu_nav{
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    }
+    .logo img{
+        width: 60px;
+
+    }*
+/*@media(max-width:675px){
+    .menu_navegacion nav {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        background-color: azure;
+        width: 250px;
+        height: 100vh;
+        pading: 60px;
+    }
+    .menu_navegacion ul{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .menu_navegacion ul li{
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .menu_navegacion ul li a{
+        color: black;
+    }
+}*/
